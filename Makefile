@@ -1,7 +1,7 @@
 MAIN = resume
 LATEX = pdflatex
 LATEX_FLAGS = -interaction=nonstopmode -halt-on-error
-AUXFILES = *.aux *.log *.out *.toc *.lof *.lot *.fls *.fdb_latexmk
+AUXFILES = *.aux *.log *.out *.toc *.lof *.lot *.fls *.fdb_latexmk *.synctex.gz *.bak*
 
 .PHONY: all clean
 
