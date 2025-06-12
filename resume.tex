@@ -1,0 +1,125 @@
+\documentclass[a4paper]{oscar-resume}
+
+\begin{document}
+
+%------------------------------------------------
+% TITLE SECTION
+%------------------------------------------------
+\lastupdated{}
+\namesection{Oscar L.}{Downing}{\href{mailto:odowning19@gmail.com}{odowning19@gmail.com} | \mynumber{} | \urlstyle{same}\url{www.linkedin.com/in/oscar-downing} | GitHub: \href{https://github.com/qozymandias}{\bf qozymandias}}
+
+%------------------------------------------------
+% LEFT COLUMN
+%------------------------------------------------
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+    %------------------------------------------------
+    % Education
+    %------------------------------------------------
+    \section{Education}
+    \smallsectionspace{}
+
+    \subsection{University of New South Wales}
+    \descript{B.E. (Hons) in Computer Engineering}
+    \location{Feb. 2016 --- Aug. 2021 | Sydney, NSW}
+        Honours thesis: ``Enhancements to the \href{https://github.com/NICTA/cogent}{\textsc{Cogent}} Property-Based Testing framework''. \\
+        Stephen Robjohns Memorial Rural Engineering Scholar.
+
+    %------------------------------------------------
+    % Skills
+    %------------------------------------------------
+    \section{Skills}
+    \smallsectionspace{}
+
+    \subsection{Programming}
+    \smallsectionspace{}
+
+    \location{Proficient}
+        \rust{} \textbullet{} \clang{} \textbullet{} \cpp{} \\
+        \python{} \textbullet{} \bash{} \\
+        \typescript{} \textbullet{} \javascript{} \\
+    \smallsectionspace{}
+
+    \location{Intermediate}
+        \java{} \textbullet{} \kotlin{} \\
+        \haskell{} \\
+        \vhdl{} \textbullet{} \verilog{} \\
+        \LaTeX{} \textbullet{} \matlab{} \\
+        \isabelle{} (proof assistant) \\
+    \sectionspace{}
+
+    \subsection{Web \& Cloud}
+    \smallsectionspace{}
+        \xml{} \textbullet{} \json{} \\
+        \css{} \textbullet{} \react{} \\
+        \aws{} \boto{} \textbullet{} \ectwo{} \textbullet{} \rds{} \\
+        \jnciaJunos{} \textbullet{} \jnciaDevOps{} \\
+    \sectionspace{}
+
+    \subsection{Tools \& Frameworks}
+    \smallsectionspace{}
+        \linux{} \textbullet{} \git{} \textbullet{} \docker{} \\
+        \cmake{} \textbullet{} \conan{} \textbullet{} \gdb{} \\
+        \pytest{} \textbullet{} \asyncio{} \\
+        \nodejs{} \textbullet{} \spring{} \\
+        \googletest{} \textbullet{} \junit{} \\
+        \cucumber{} \\
+        \ansible{} \textbullet{} \jenkins{} \\
+
+    %------------------------------------------------
+    % Side Projects & Volunteering
+    %------------------------------------------------
+    \section{Exper. Cont.}
+    \smallsectionspace{}
+
+    \runsubsection{Soprano Design}
+    \descript{| Graduate Software Engineer}
+        \location{Aug. 2020 --- Dec. 2020}
+        \vspace{\topsep}
+        \textbullet{} Contributed to the development and QA of the MEMS platform --- a Communication Platform as a Service. \\
+        \textbullet{} \java{} web application (Apache Struts), tested with \junit{} and \cucumber{} Test framework. \\
+    \smallsectionspace{}
+
+\end{minipage} % The end of the left column
+\hfill
+% do not delete this comment
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+    %------------------------------------------------
+    % Experience
+    %------------------------------------------------
+    \section{Experience}
+    \smallsectionspace{}
+
+    \runsubsection{Dolby.io}
+    \descript{| Software Engineer}
+        \location{Dec. 2021 --- Present | Sydney, NSW}
+        \vspace{\topsep} % hacky fix only use here
+    \begin{tightitemize}
+        \item {Contributed to the Dolby Voice Conferencing Server (DVCS) project, a highly performant multi-threaded audio mixing server written in \cpp{} (\cppstd{}/\conan{}/\cmake{}) for \voip{} communications;
+            used by the \dolbyio{} platform, designed for conferencing and virtual worlds communication at high-scale --- thousands of real clients connected and talking.
+           Designed/developed/tested critical new features (Dist Attens). }
+        \item {Developed supporting \python{}/\bash{} scripts for testing/CI/CD; including unit/system tests (\googletest{}) and debugged complex multi-threaded problems in \cpp{} with \gdb{}.
+        Improved \oats{} end-to-end testing framework (\python{}/\asyncio{}) which generated \rtp{} and impaired traffic for quality analysis. }
+    \item { Improved CI scripts (as DVCS shifted its CI to \gitlab) and \aws{} scripts (\python/\boto) which saved thousands of dollars in \ectwo{} computing costs. Additionally, built a \nodejs{} \typescript{} application for viewing CI/CD pipelines which interfaced with \gitlab{} \rest{} APIs. }
+        \item {Improved documentation for onboarding new engineers. Mentored interns, actively learned new technologies, and presented talks internally.}
+        \item {Wrote \vagrant{} VM scripts for developers (OS env setup with \bash{} scripting) and \docker{} scripts/images for testing/production. }
+        \item {Upgraded build/production environment to \debian{}, rewriting toolchains (\conan{}/\cmake{}) and fixing bugs uncovered by the new compiler; including rewriting packaging scripts and supporting \python scripts.}
+        \item {Built client-side and server-side applications (\nodejs{} \typescript{}/ \javascript{}) utilising customer-facing APIs for internal competitions.}
+    \end{tightitemize}
+    \smallsectionspace{}
+
+    \runsubsection{Atlassian}
+        \descript{| Site Reliability Engineer Intern}
+        \location{Nov. 2020 --- Feb. 2021 | Sydney, NSW}
+    \begin{tightitemize}
+        \item {Worked in the Shard Capacity Management team on the Tenant Placement Service project: an internal \aws{} automation microservice, being developed to manage the \rds{} fleet (which hosts data from \jira{} and \conf{} cloud products).}
+        \item {Designed and developed software modules for automating manual tasks relating to \rds{} life-cycle management. Specifically: creating a new \rds{} instance, deleting an \rds{} instance, and auto-scaling an \rds{} with low storage. Additionally, tracking and reporting functionality was built to allow for internal audits of \rds{} events. Implemented in \kotlin{}/\spring{}, with a \postgres{} DB (using \jpa{}) and \rest{} APIs; Used in production saving the team from doing these tasks manually and affecting $\num{150000} +$ Atlassian customers.}
+    \end{tightitemize}
+    \smallsectionspace{}
+
+\end{minipage}
+\end{document}
