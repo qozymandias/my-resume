@@ -114,15 +114,11 @@ Last Updated on \today % Last Updated text
 {\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 
-
-
-% extra commands
 \newcommand{\cogent}{\textsc{Cogent}\xspace}
 \newcommand{\aws}{\textsc{AWS}\xspace}
 \newcommand{\rds}{\textsc{RDS}\xspace}
 \newcommand{\jira}{\textsc{Jira}\xspace}
 \newcommand{\conf}{\textsc{Confluence}\xspace}
-
 \newcommand{\spring}{\textsc{SpringBoot}\xspace}
 \newcommand{\cucumber}{\textsc{Cucumber/Selenium}\xspace}
 \newcommand{\rest}{\textsc{REST}\xspace}
@@ -136,7 +132,6 @@ Last Updated on \today % Last Updated text
 \newcommand{\git}{\textsc{Git}\xspace}
 \newcommand{\docker}{\textsc{Docker}\xspace}
 \newcommand{\jenkins}{\textsc{Jenkins}\xspace}
-
 \newcommand{\kotlin}{\textsc{Kotlin}\xspace}
 \newcommand{\python}{\textsc{Python}\xspace}
 \newcommand{\java}{\textsc{Java}\xspace}
@@ -176,16 +171,15 @@ Last Updated on \today % Last Updated text
 \newcommand{\gitlab}{\textsc{GitLab}\xspace}
 \newcommand{\css}{\textsc{CSS}\xspace}
 \newcommand{\junit}{\textsc{JUnit}\xspace}
-%
 %\newcommand{\html}{\textsc{HTML}\xspace}
 %\newcommand{\xml}{\textsc{XML}\xspace}
 %\newcommand{\json}{\textsc{JSON}\xspace}
 %\newcommand{\yaml}{\textsc{YAML}\xspace}
 \newcommand{\rust}{\textsc{Rust}\xspace}
+\newcommand{\actix}{\textsc{ActixWeb}\xspace}
 \newcommand{\go}{\textsc{Go}\xspace}
 \newcommand{\jnciaJunos}{\textsc{JNCIA-Junos}\xspace}
 \newcommand{\jnciaDevOps}{\textsc{JNCIA-DevOps}\xspace}
-
 \newcommand{\warp}{\textsc{Warp17}\xspace}
 \newcommand{\eventblock}{\textsc{EventBlock}\xspace}
 \newcommand{\apexevent}{\textsc{ApexEvent}\xspace}
@@ -194,5 +188,4 @@ Last Updated on \today % Last Updated text
 \newcommand{\jinja}{\textsc{Jinja2}\xspace}
 \newcommand{\yaml}{\textsc{YAML}\xspace}
 \newcommand{\mongo}{\textsc{MongoDB}\xspace}
-
-
+\newcommand{\rocksdb}{\textsc{RocksDB}\xspace}
