@@ -140,6 +140,7 @@ Last Updated on \today % Last Updated text
 \newcommand{\bash}{\textsc{Bash}\xspace}
 \newcommand{\react}{\textsc{React.JS}\xspace}
 \newcommand{\conan}{\textsc{Conan}\xspace}
+\newcommand{\cargo}{\textsc{Cargo}\xspace}
 \newcommand{\debian}{\textsc{Debian}\xspace}
 \newcommand{\cppstd}{\textsc{std-17}\xspace}
 \newcommand{\dolbyio}{\textsc{dolby.io}\xspace}
@@ -189,3 +190,4 @@ Last Updated on \today % Last Updated text
 \newcommand{\yaml}{\textsc{YAML}\xspace}
 \newcommand{\mongo}{\textsc{MongoDB}\xspace}
 \newcommand{\rocksdb}{\textsc{RocksDB}\xspace}
+\newcommand{\cuda}{\textsc{CUDA}\xspace}

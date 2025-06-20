@@ -12,3 +12,7 @@ sudo apt install texlive-latex-base texlive-latex-recommended texlive-science te
 make      
 make clean
 ```
+
+
+
+

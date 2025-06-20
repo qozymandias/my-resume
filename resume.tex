@@ -35,18 +35,13 @@
 	\smallsectionspace{}
 
 	\location{Proficient}
-	\rust{} \\
-	\clang{} \textbullet{} \cpp{} \\
-	\python{} \textbullet{} \bash{} \\
+	\rust{} \textbullet{} \clang{} \textbullet{} \cpp{} \textbullet{} \python{} \textbullet{} \bash{} \\
 	\typescript{} \textbullet{} \javascript{} \\
 	\smallsectionspace{}
 
 	\location{Intermediate}
-	\java{} \textbullet{} \kotlin{} \\
-	\haskell{} \\
-	\vhdl{} \textbullet{} \verilog{} \\
-	\LaTeX{} \textbullet{} \matlab{} \\
-	\isabelle{} (proof assistant) \\
+	\java{} \textbullet{} \kotlin{} \textbullet{} \haskell{} \textbullet{} \vhdl{} \\
+	\verilog{} \textbullet{} \LaTeX{} \textbullet{} \isabelle{} \\
 	\sectionspace{}
 
 	\subsection{Web \& Cloud}
@@ -59,14 +54,13 @@
 
 	\subsection{Tools \& Frameworks}
 	\smallsectionspace{}
-	\mongo{} \\
+	\mongo{} \textbullet{} \rocksdb{} \textbullet{} \cuda{} \\
 	\linux{} \textbullet{} \git{} \textbullet{} \docker{} \\
-	\cmake{} \textbullet{} \conan{} \textbullet{} \gdb{} \\
-	\pytest{} \textbullet{} \asyncio{} \\
-	\nodejs{} \textbullet{} \spring{} \\
-	\googletest{} \textbullet{} \junit{} \\
-	\cucumber{} \\
-	\ansible{} \textbullet{} \jenkins{} \\
+	\cmake{} \textbullet{} \cargo{} \textbullet{} \conan{} \textbullet{} \gdb{} \\
+	\pytest{} \textbullet{} \asyncio{} \textbullet{} \nodejs{} \\
+	\spring{} \textbullet{} \googletest{} \textbullet{} \junit{} \\
+	\cucumber{} \textbullet{} \ansible{} \\
+	%  \\ \jenkins{} \\
 
 	%------------------------------------------------
 	% Side Projects & Volunteering
@@ -75,10 +69,20 @@
 	\smallsectionspace{}
 
 	\runsubsection{Soprano Design}
-	\descript{| Graduate Software Engineer}
+	\descript{$|$ Graduate Software Engineer}
 	\location{Aug. 2020 --- Dec. 2020}
-	\textbullet{} Contributed to the development and QA of the MEMS platform --- a Communication Platform as a Service. \\
-	\textbullet{} \java{} web application (Apache Struts), tested with \junit{} and \cucumber{} Test framework. \\
+	\textbullet{} Contributed to the development and QA of the MEMS platform, a \java{} web
+	application (Apache Struts), tested with \junit{}/\cucumber{}. \\
+	\smallsectionspace{}
+	\smallsectionspace{}
+
+	\runsubsection{Juniper Networks}
+	\descript{$|$ Software Engineer Intern}
+	\location{Feb. 2019 --- Aug. 2020}
+	\textbullet{} Developed modules (\python{}/\ansible{}) for Network Implementation and Test Automation (\nita) tool.
+	Configured/deployed \href{https://github.com/Juniper/warp17}{\warp} traffic gen tool for scale test. \\
+	\textbullet{} Developed \href{https://github.com/Juniper/jsnapy}{JSnapy} scripts for automated testing. Upgraded
+	static \junos{} config files into dynamic \jinja{}/\yaml{} files. \\
 	\smallsectionspace{}
 
 \end{minipage} % The end of the left column
@@ -97,42 +101,47 @@
 	\smallsectionspace{}
 
 	\runsubsection{Delphinus Lab}
-	\descript{| Software Engineer}
-	\location{Dec. 2023 --- Present | Sydney, NSW}
+	\descript{$|$ Software Engineer}
+	\location{Dec. 2023 --- Present}
 	\vspace{\topsep}
 	\begin{tightitemize}
 		\item {
-		            Contributed to the development and optimisation of the
-		            \href{https://explorer.zkwasmhub.com}{zkWASM Playground}, a cloud-based platform for zero-knowledge
-		            WebAssembly applications. Backend written in \rust{}/\actix; frontend written in
-		            \react{}/\typescript{}.
+		            Contributed extensively to the design, development, and optimisation of the
+		            \href{https://explorer.zkwasmhub.com}{zkWASM Playground}, a cloud-based platform for zero-knowledge proofs
+		            of WebAssembly programs. Improved backend reliability, performance, and system observability
+		            (\rust{}/\actix{}), and enhanced frontend integration (\react{}/\typescript{}).
 		      }
 		\item {
-		            Developed archive system for task storage. Integrated and debugged new zkWASM versions including the
-		            continuation feature. Implemented a new fee structures. Integrated request throttling and \mongo
-		            client management.
+		            Designed and delivered key features including Proof Continuations, Task Archiving, integration of new
+		            \href{https://github.com/DelphinusLab/zkWasm.git}{zkWASM} versions, and \rocksdb{} based Merkle storage.
+		            Developed associated handlers, implemented robust cleanup routines, and enabled graceful shutdown and
+		            recovery.
 		      }
 		\item {
-		            Integrated cargo clippy into the codebase, leading a significant refactor that reduced crashes,
-		            eliminated duplication, and improved overall maintainability. Including redesigning the session update
-		            mechanism and simplifying the dry-run servers logic.
+		            Resolved critical \mongo{} performance and memory issues through query optimization, index strategy
+		            redesign, client connection pooling, and efficient client resource management. Introduced request
+		            throttling, dynamic fee scaling for large proofs, and structured log rotation support.
 		      }
 		\item {
-		            Migrated the Merkle database from \mongo to \rocksdb, implemented necessary handlers, cleanup, and
-		            graceful shutdown. Fixed high \mongo memory usage by optimising index strategies, query design, and
-		            connection pooling. Improved log and rotation support.
+		            Led major architectural refactors to core components such as the session update mechanism, dry-run
+		            service, and auto-submit logic. Integrated cargo clippy across the codebase, eliminating unsafe patterns,
+		            panics, and duplication, substantially improving maintainability and code health.
 		      }
 		\item {
-		            Expanded and refactored the end-to-end testing framework, fixed issues with multi-prover synchronization
-		            and UI input validation, startup improvements, timeout adjustments for long-running proofs, and instance
-		            hash verification.
+		            Strengthened testing infrastructure and documentation, expanding and improving the end-to-end test framework and unit tests.
+		            Added test coverage for edge cases (e.g., multi-prover synchronization, timeout handling), and authored
+		            scripting utilities for testing and debugging.
 		      }
+		% \item {
+		%             Improved developer and user experience, fixing UI validation bugs, reducing redundant REST calls, updating
+		%             documentation, and enhancing startup routines and integration examples.
+		%       }
 	\end{tightitemize}
 	\smallsectionspace{}
 
 	\runsubsection{Dolby.io}
-	\descript{| Software Engineer}
-	\location{Dec. 2021 --- Nov. 2023 | Sydney, NSW}
+	\descript{$|$ Software Engineer}
+	\location{Dec. 2021 --- Nov. 2023}
 	\begin{tightitemize}
 		\item {
 		            Contributed to the Dolby Voice Conferencing Server (DVCS) project, a highly performant multi-threaded
@@ -142,10 +151,10 @@
 		            Attens).
 		      }
 		\item {
-		            Developed supporting \python{}/\bash{} scripts for testing/CI/CD; including unit/system tests
+		            Developed supporting \python{}/\bash{} scripts for testing/CI/CD, including unit/system tests
 		            (\googletest{}) and debugged complex multi-threaded problems in \cpp{} with \gdb{}. Improved \oats{}
-		            end-to-end testing framework (\python{}/\asyncio{}) which generated \rtp{} and impaired traffic for
-		            quality analysis.
+		            end-to-end testing framework (\python{}/\asyncio{})
+		            % which generated \rtp{} and impaired traffic for quality analysis.
 		      }
 		\item {
 		            Improved CI scripts (as DVCS shifted its CI to \gitlab) and \aws{} scripts (\python/\boto) which saved
@@ -172,8 +181,8 @@
 	\smallsectionspace{}
 
 	\runsubsection{Atlassian}
-	\descript{| Site Reliability Engineer Intern}
-	\location{Nov. 2020 --- Feb. 2021 | Sydney, NSW}
+	\descript{$|$ Site Reliability Engineer Intern}
+	\location{Nov. 2020 --- Feb. 2021}
 	\begin{tightitemize}
 		\item {
 		            Worked with Shard Capacity Management team on the Tenant Placement Service project: an internal \aws{}
