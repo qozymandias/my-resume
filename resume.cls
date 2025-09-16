@@ -138,7 +138,8 @@ Last Updated on \today % Last Updated text
 \newcommand{\cpp}{\textsc{C++}\xspace}
 \newcommand{\haskell}{\textsc{Haskell}\xspace}
 \newcommand{\bash}{\textsc{Bash}\xspace}
-\newcommand{\react}{\textsc{React.JS}\xspace}
+\newcommand{\react}{\textsc{React}\xspace}
+\newcommand{\wasm}{\textsc{WASM}\xspace}
 \newcommand{\conan}{\textsc{Conan}\xspace}
 \newcommand{\cargo}{\textsc{Cargo}\xspace}
 \newcommand{\debian}{\textsc{Debian}\xspace}
